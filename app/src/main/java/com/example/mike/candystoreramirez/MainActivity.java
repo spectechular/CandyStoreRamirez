@@ -1,10 +1,12 @@
 package com.example.mike.candystoreramirez;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
     }
 
     @Override
@@ -33,7 +36,22 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_add) {
+            Log.w("MainActivity", "Add Selected");
+            Intent insertIntent = new Intent(this, InsertActivity.class);
+            this.startActivity(insertIntent);
+            return true;
+        }
+        if (id == R.id.action_delete) {
+            Log.w("MainActivity", "Delete Selected");
+            Intent deleteIntent = new Intent(this, DeleteActivity.class);
+            this.startActivity(deleteIntent);
+            return true;
+        }
+        if (id == R.id.action_update) {
+            Log.w("MainActivity", "Update Selected");
+            Intent updateIntent = new Intent(this, UpdateActivity.class);
+            this.startActivity(updateIntent);
             return true;
         }
 
