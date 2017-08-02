@@ -8,6 +8,11 @@
     <string name="label_price">Price</string>
     <string name="button_add">ADD</string>
     <string name="button_back">BACK</string>
+    <string name="title_activity_insert">Add New Candy</string>
+    <string name="candy_price_edit_text_hint">Candy Price</string>
+    <string name="candy_name_edit_text_hint">Candy Name</string>
+    <string name="title_activity_delete">Delete a Candy</string>
+    <string name="title_activity_update">Update a Candy</string>
 
 
 </resources>

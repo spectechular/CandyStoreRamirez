@@ -19,6 +19,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".InsertActivity"
+            android:label="@string/title_activity_insert"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity
+            android:name=".DeleteActivity"
+            android:label="@string/title_activity_delete"
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
+        <activity
+            android:name=".UpdateActivity"
+            android:label="@string/title_activity_update"
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
     </application>
 
 </manifest>
